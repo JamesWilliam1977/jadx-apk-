@@ -1,0 +1,297 @@
+# Instincts generated from https://github.com/JamesWilliam1977/jadx-apk-
+# Generated: 2026-07-01T20:15:38.273Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: jadx-apk--commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: test, chore
+
+## Evidence
+
+- 2 commits analyzed
+- Detected conventional commit pattern
+- Examples: test: add regression package tests for JadxDecompiler (PR #2901), chore: update gradle and dependencies
+
+---
+id: jadx-apk--commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Commit Length
+
+## Action
+
+Write moderate-length commit messages (~51 characters)
+
+## Evidence
+
+- Average commit message length: 51 chars
+- Based on 2 commits
+
+---
+id: jadx-apk--naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: jadx-apk--import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: jadx-apk--export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: jadx-apk--instinct-class-naming
+trigger: "When creating a new Java class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in files: class names follow PascalCase
+
+---
+id: jadx-apk--instinct-function-naming
+trigger: "When defining a new Java method"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Function Naming
+
+## Action
+
+Name the method using camelCase
+
+## Evidence
+
+- Pattern in files: function names follow camelCase
+
+---
+id: jadx-apk--instinct-constant-naming
+trigger: "When declaring a constant in Java"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in files: constants use SCREAMING_SNAKE_CASE
+
+---
+id: jadx-apk--instinct-file-naming
+trigger: "When creating a new Java file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in files: file names use camelCase
+
+---
+id: jadx-apk--instinct-import-style
+trigger: "When importing Java classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in files: imports are relative
+
+---
+id: jadx-apk--instinct-export-style
+trigger: "When exporting Java classes or methods"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in files: named exports used
+
+---
+id: jadx-apk--instinct-test-commit-prefix
+trigger: "When committing new or updated tests"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Test Commit Prefix
+
+## Action
+
+Prefix the commit message with 'test:'
+
+## Evidence
+
+- Seen in commit: test: add regression package tests for JadxDecompiler (PR #2901)
+
+---
+id: jadx-apk--instinct-chore-commit-prefix
+trigger: "When committing maintenance or dependency updates"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Chore Commit Prefix
+
+## Action
+
+Prefix the commit message with 'chore:'
+
+## Evidence
+
+- Seen in commit: chore: update gradle and dependencies
+
+---
+id: jadx-apk--instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Commit Length
+
+## Action
+
+Keep the commit message around 50 characters on average
+
+## Evidence
+
+- Pattern: average commit message length is 51
+
+---
+id: jadx-apk--instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/jadx-apk-
+---
+
+# Jadx Apk  Instinct Test Location
+
+## Action
+
+Place tests in mixed locations (not a dedicated test folder)
+
+## Evidence
+
+- Pattern: testLocation is 'mixed'
+
